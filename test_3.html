@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Anketa shri</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="test.js"></script>
+</head>
+
+<body>
+<h1>Анкета школы разработки интерфейсов<h1>
+<p>Яндекс открывает набор во вторую Школу разработки интерфейсов в Москве.
+Для поступления необходимо заполнить анкету с тестовыми заданиями. Приём заявок закрывается 19 августа в 23:59 по московскому времени. По результатам теста мы пригласим в Школу 30-40 человек.
+Подробности о Школе читайте на <a href="http://tech.yandex.ru/education/shri/"> этой странице</a>.
+</p>
+<h2>Заполните, пожалуйста, анкету</h2>
+<div class="horizontal-click">
+<progress max="100" value="0" id="progress"></progress>
+
+<input type="radio" name="vkl" id="vkl1" checked="checked"/>
+<input type="radio" name="vkl" id="vkl2"/>
+<input type="radio" name="vkl" id="vkl3"/>
+
+<label for="vkl1">Вопрос 1</label>
+<FORM NAME="myform" ACTION="" METHOD="GET">Год рождения: <BR>
+    <INPUT TYPE="text" NAME="inputbox" VALUE="">
+    <INPUT TYPE="button" NAME="button" Value="Click" onClick="testDateBirth(this.form)">
+</FORM>
+
+<label for="vkl2">Вопрос 2</label>
+<div>
+   <FORM NAME="myform" ACTION="" METHOD="GET">E-mail: <BR>
+    <INPUT TYPE="text" NAME="inputbox" VALUE="">
+    <INPUT TYPE="button" NAME="button" Value="Click" onClick="testEmail(this.form)">
+   </form>
+
+</div>
+
+<label for="vkl3">Вопрос 3</label>
+<div>Вкладка 3</div>
+
+</div>
+<br>
+<select>
+ <option>Откуда вы о нас узнали</option>
+ <option>друзья</option>
+ <option>Я.субботник</option>
+</select>
+
+<form action="" method="GET" onsubmit="return checkCheckBox(this)">
+
+    <!--Enter your form contents here-->
+
+    <b>Я даю своё согласие на передачу в ООО "Яндекс" своих данных</b>
+    <br>
+    Я согласен <input type="checkbox" value="0" name="agree">
+    <input type="submit" value="Да">
+    <input type="button" value="Уйти" onclick="document.location.href='/index.html';">
+</form>
+
+</body>
+</html>
